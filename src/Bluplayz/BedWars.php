@@ -76,13 +76,13 @@ class Bedwars extends PluginBase implements Listener {
 				{
 					$this->main->getServer()->getLogger()->info('§cOoops! 你安装了ZXDAKenrel！');
 				    $this->main->getServer()->getLogger()->info('§e我的服务器出了什么问题？');
-				    $this->main->getServer()->getLogger()->info('§f这是由Nether Tech制造的MicroBattles插件。');
+				    $this->main->getServer()->getLogger()->info('§f这是由Nether Tech制造的BedWars插件。');
 				    $this->main->getServer()->getLogger()->info('§f这个插件不支持ZXDA内核，当它检测到ZXDA内核时，它将被禁用_(:з」∠)_');
 				    $this->main->getServer()->getLogger()->info('§f当它被禁用时，它也将禁用ZXDA内核。');
 				    $this->main->getServer()->getLogger()->info('§e有没有能让这两个插件共存的方法？');
 				    $this->main->getServer()->getLogger()->info('§f当然有了。您可以向Nether Tech付款以获取源代码，默认价格为30元');
 					$this->getServer->getPluginManager->disablePlugin("ZXDAKernel")
-					$this->getServer->getPluginManager->disablePlugin("MicroBattles")
+					$this->getServer->getPluginManager->disablePlugin("BedWars")
 				}
         @mkdir($this->getDataFolder());
         @mkdir($this->getDataFolder()."Arenas");
