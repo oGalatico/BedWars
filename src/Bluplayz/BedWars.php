@@ -665,7 +665,7 @@ class Bedwars extends PluginBase implements Listener {
             new IntTag("z", $player->getZ())
         ]);
         $nbt->Items->setTagType(NBT::TAG_Compound);
-        $tile = Tile::createTile("Chest", $player->getLevel()->getChunk($player->getX() >> 4, $player->getZ() >> 4), $nbt);
+        $tile = Tile::createTile(Tiles::CHEST, $this->getLevel(), $nbt);
         if($tile instanceof Chest) {
 
             $config = new Config($this->getDataFolder() . "shop.yml", Config::YAML);
