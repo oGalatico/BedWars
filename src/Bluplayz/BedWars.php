@@ -1,5 +1,7 @@
 <?php
 
+#TESTE
+
 namespace Bluplayz;
 
 use pocketmine\block\Block;
