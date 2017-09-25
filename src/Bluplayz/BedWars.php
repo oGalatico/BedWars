@@ -49,7 +49,7 @@ use pocketmine\utils\TextFormat;
 
 class Bedwars extends PluginBase implements Listener {
 
-    public $prefix = TextFormat::GRAY."[".TextFormat::DARK_AQUA."Bedwars".TextFormat::GRAY."]".TextFormat::WHITE." ";
+    public $prefix = TextFormat::AQUA."Bedwars".TextFormat::WHITE." ";
     public $registerSign = false;
     public $registerSignWHO = "";
     public $registerSignArena = "Arena1";
@@ -69,7 +69,7 @@ class Bedwars extends PluginBase implements Listener {
         //Entity::registerEntity(Villager::class, true);
 
         $this->getServer()->getPluginManager()->registerEvents($this, $this);
-        $this->getLogger()->info($this->prefix.TextFormat::GREEN."BedWars plugin by NetherTechnology loaded!");
+        $this->getLogger()->info($this->prefix.TextFormat::GREEN."BedWars plugin edit by Obom_php");
         @mkdir($this->getDataFolder());
         @mkdir($this->getDataFolder()."Arenas");
         @mkdir($this->getDataFolder()."Maps");
